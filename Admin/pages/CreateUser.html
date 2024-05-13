@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAINTY JEWEL ADMIN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/admin_style.css">
+</head>
+
+<body>
+    <div id="wrapper flex">
+
+        <!-- NAVIGATION BAR -->
+        <aside class="nav_bar">
+            <div class="logo">
+                <img src="/logo.png" alt="">
+            </div>
+
+            <nav>
+                <ul id="nav_list" class="flex column">
+
+                    <div class="nav_items flex sbw align_center">
+                        <div class=" flex align_center">
+                            <i class="fa-solid fa-gauge-high "></i>
+                            <li id="dashboardPage"><a href="/admin.html" >Dashboard</a></li>
+                        </div>
+
+                        <i class="fa-solid fa-chevron-right icon"></i>
+                    </div>
+
+                    <div class="nav_items flex sbw align_center">
+                        <div class=" flex align_center">
+                            <i class="fa-solid fa-shop"></i>
+                            <li id="productPage"><a href="/pages/product.html" >Product</a></li>
+                        </div>
+
+                        <i class="fa-solid fa-chevron-right icon"></i>
+                    </div>
+
+                    <div class="nav_items flex sbw align_center">
+                        <div class=" flex align_center">
+                            <i class="fa-solid fa-user "></i>
+                            <li id="usersPage"><a href="/pages/users.html">Users</a></li>
+                        </div>
+
+                        <i class="fa-solid fa-chevron-right icon"></i>
+                    </div>
+
+                    <div class="nav_items flex sbw align_center">
+                        <div class=" flex align_center">
+                            <i class="fa-solid fa-cart-plus "></i>
+                            <li id="createProductPage"><a href="/pages/createProduct.html">Create Product</a></li>
+                        </div>
+
+                        <i class="fa-solid fa-chevron-right icon"></i>
+                    </div>
+
+                    <div class="nav_items flex sbw align_center">
+                        <div class=" flex align_center">
+                            <i class="fa-solid fa-user-plus"></i>
+                            <li id="createUserPage"><a href="/pages/CreateUser.html">Create User</a></li>
+                        </div>
+
+                        <i class="fa-solid fa-chevron-right icon"></i>
+                    </div>
+
+
+                </ul>
+            </nav>
+
+        </aside>
+
+
+
+        <!-- MAIN DASHBOARD -->
+        <main>
+            <div class="dashboard__topNav">
+                <div class="dashboard__wrapper">
+
+                    <!-- TOP NAV BAR -->
+
+                    <ul class="top_nav1 flex sbw align_center">
+                        <li class="flex align_center gap" >
+                            <i class="fa-solid fa-bars"></i>
+                            <a href="" id="currentPage">Home</a>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-user"></i>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </li>
+                    </ul>
+
+                    <h1 class="page__tile">CREATE USER</h1>
+                </div>
+
+
+
+                <form action="" id="" class="create_user_form flex column">
+
+                    <div>
+                        <label for="user_name">Name</label>
+                        <input type="text" name="" id="user_name" placeholder="Enter user name" required
+                            class="block">
+                    </div>
+
+                    <div>
+                        <label for="user_email">Email</label>
+                        <input type="email" name="" id="user_email" placeholder="Enter user email" required
+                            class="block">
+                    </div>
+
+                    <div>
+                        <label for="user_phoneNumber">Phone Number</label>
+                        <input type="number" name="" id="user_phoneNumber" placeholder="Enter user phoneNumber" required
+                            class="block">
+                    </div>
+
+                    <div>
+                        <label for="user_password">Password</label>
+                        <input type="password" name="" id="user_password" placeholder="Enter user password" required
+                            class="block">
+                    </div>
+
+
+    
+
+                    <input type="button" value="create user" id="createNewUser_btn">
+                </form>
+
+
+
+
+        </main>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="/jquery.js"></script>
+    <script src="/admin_script.js"></script>
+</body>
+
+</html>

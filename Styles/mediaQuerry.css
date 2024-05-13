@@ -1,0 +1,39 @@
+@media(max-width:768px){
+    #home_sec2  .section__container {
+        flex-direction: column;
+    }
+
+    #home_sec2  .section__container > div{
+        width: 100%;
+    }
+
+    #home_sec1 .section__container{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    section#home_sec3  {
+        width: 100vw;
+    }
+
+    section#home_sec3 img {
+        width: 100%;
+    }
+
+    .form_section{
+        flex-direction: column;
+    }
+
+    .site__footer__container, .form_section{
+        flex-direction: column;
+    }
+.home__new__items .section__container{
+    flex-direction: column;
+}
+
+.new__items__card img{
+    height: 405px;
+    width: 100%;
+    object-fit: contain;
+}
+}

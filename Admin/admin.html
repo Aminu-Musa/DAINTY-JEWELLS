@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAINTY JEWEL ADMIN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="admin_style.css">
+</head>
+
+<body>
+    <div id="wrapper flex">
+
+        <!-- NAVIGATION BAR -->
+        <aside class="nav_bar">
+            <div class="logo">
+                <img src="/logo.png" alt="">
+            </div>
+
+            <nav>
+                <ul id="nav_list" class="flex column">
+
+                    <div class="nav_items flex sbw align_center">
+                        <div class=" flex align_center">
+                            <i class="fa-solid fa-gauge-high "></i>
+                            <li id="dashboardPage"><a href="/admin.html" >Dashboard</a></li>
+                        </div>
+
+                        <i class="fa-solid fa-chevron-right icon"></i>
+                    </div>
+
+                    <div class="nav_items flex sbw align_center">
+                        <div class=" flex align_center">
+                            <i class="fa-solid fa-shop"></i>
+                            <li id="productPage"><a href="/pages/product.html" >Product</a></li>
+                        </div>
+
+                        <i class="fa-solid fa-chevron-right icon"></i>
+                    </div>
+
+                    <div class="nav_items flex sbw align_center">
+                        <div class=" flex align_center">
+                            <i class="fa-solid fa-user "></i>
+                            <li id="usersPage"><a href="/pages/users.html">Users</a></li>
+                        </div>
+
+                        <i class="fa-solid fa-chevron-right icon"></i>
+                    </div>
+
+                    <div class="nav_items flex sbw align_center">
+                        <div class=" flex align_center">
+                            <i class="fa-solid fa-cart-plus "></i>
+                            <li id="createProductPage"><a href="/pages/createProduct.html">Create Product</a></li>
+                        </div>
+
+                        <i class="fa-solid fa-chevron-right icon"></i>
+                    </div>
+
+                    <div class="nav_items flex sbw align_center">
+                        <div class=" flex align_center">
+                            <i class="fa-solid fa-user-plus"></i>
+                            <li id="createUserPage"><a href="/pages/CreateUser.html">Create User</a></li>
+                        </div>
+
+                        <i class="fa-solid fa-chevron-right icon"></i>
+                    </div>
+
+
+                </ul>
+            </nav>
+
+        </aside>
+
+
+        <!-- MAIN DASHBOARD -->
+        <main>
+            <div class="dashboard__topNav">
+                <div class="dashboard__wrapper">
+
+                    <!-- TOP NAV BAR -->
+
+                    <ul class="top_nav1 flex sbw align_center">
+                        <li class="flex align_center gap">
+                            <i class="fa-solid fa-bars"></i>
+                            <a href="" id="currentPage">Home</a>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-user"></i>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </li>
+                    </ul>
+
+                    <h1 class="page__tile">DASHBORD</h1>
+                </div>
+
+
+                <!-- DASH BOARD CARD VIEW -->
+                <div class="dashboard_carview">
+                    <div class="dashboard_cardview_container flex sbw">
+
+                        <div class="card" id="totalProducts">
+                            <h2>Total Products</h2>
+                            <p>203</p>
+                        </div>
+
+                        <div class="card" id="totalUsers">
+                            <h2>Total Users</h2>
+                            <p id="total__Users"></p>
+                        </div>
+
+                        <div class="card" id="totalCartProduct">
+                            <h2>Total Products in cart</h2>
+                            <p>253</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- TABLE SHOWING PRODUCTS -->
+                <div class="Dashboard_Product__list">
+
+                    <table id="customers">
+                        <tr>
+                            <th>Company</th>
+                            <th>Contact</th>
+                            <th>Country</th>
+                        </tr>
+                        <tr>
+                            <td>Alfreds Futterkiste</td>
+                            <td>Maria Anders</td>
+                            <td>Germany</td>
+                        </tr>
+                        <tr>
+                            <td>Berglunds snabbköp</td>
+                            <td>Christina Berglund</td>
+                            <td>Sweden</td>
+                        </tr>
+                        <tr>
+                            <td>Centro comercial Moctezuma</td>
+                            <td>Francisco Chang</td>
+                            <td>Mexico</td>
+                        </tr>
+                        <tr>
+                            <td>Ernst Handel</td>
+                            <td>Roland Mendel</td>
+                            <td>Austria</td>
+                        </tr>
+                        <tr>
+                            <td>Island Trading</td>
+                            <td>Helen Bennett</td>
+                            <td>UK</td>
+                        </tr>
+                        <tr>
+                            <td>Königlich Essen</td>
+                            <td>Philip Cramer</td>
+                            <td>Germany</td>
+                        </tr>
+                        <tr>
+                            <td>Laughing Bacchus Winecellars</td>
+                            <td>Yoshi Tannamuri</td>
+                            <td>Canada</td>
+                        </tr>
+                        <tr>
+                            <td>Magazzini Alimentari Riuniti</td>
+                            <td>Giovanni Rovelli</td>
+                            <td>Italy</td>
+                        </tr>
+                        <tr>
+                            <td>North/South</td>
+                            <td>Simon Crowther</td>
+                            <td>UK</td>
+                        </tr>
+                        <tr>
+                            <td>Paris spécialités</td>
+                            <td>Marie Bertrand</td>
+                            <td>France</td>
+                        </tr>
+                    </table>
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </main>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="jquery.js"></script>
+    <script src="admin_script.js"></script>
+</body>
+
+</html>
